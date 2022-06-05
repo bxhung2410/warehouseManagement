@@ -25,7 +25,6 @@ let getUser = async (req, res) => {
     }
 }
 
-
 module.exports = {
-    getUser: getUser
+    getUser: getUser,
 }
