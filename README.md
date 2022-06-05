@@ -1,5 +1,6 @@
 # warehouseManagement
-# warehouseManagement
+Ensure NodeJs and npm installed
+
 1. npm install
 2. npm instal -g @babel/node@7.12.10
 3. run mysql by xampp
