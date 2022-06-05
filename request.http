@@ -2,3 +2,16 @@ GET http://localhost:8080/api/warehouses/users/1
 
 ###
 GET http://localhost:8080/api/warehouses/data/equipment/1
+
+###
+GET http://localhost:8080/api/warehouses/data/hourly/1
+
+###
+GET http://localhost:8080/api/warehouses/data/daily/1
+
+
+###
+GET http://localhost:8080/api/warehouses/data/monthly/1
+
+###
+GET http://localhost:8080/api/warehouses/equipments/1

@@ -2,6 +2,7 @@ import express from "express"
 import homeController from "../controllers/homeController"
 import userController from "../controllers/userController"
 import dataController from "../controllers/dataController"
+import equipmentController from "../controllers/equipmentController"
 
 
 
@@ -19,6 +20,11 @@ let initWebRoutes = (app) => {
     //data api
     router.get(baseApi + '/data/equipment/:warehouseId', dataController.getPresentData)
     router.get(baseApi + '/data/hourly/:warehouseId', dataController.getHourlyData)
+    router.get(baseApi + '/data/daily/:warehouseId', dataController.getDailyData)
+    router.get(baseApi + '/data/monthly/:warehouseId', dataController.getMonthlyData)
+
+    //equipments api
+    router.get(baseApi + '/equipments/:warehouseId', equipmentController.getEquipmentsList)
 
 
     return app.use("/", router)
