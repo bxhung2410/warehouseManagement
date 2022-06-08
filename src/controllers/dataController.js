@@ -107,7 +107,6 @@ const getPresentSensorData = async (req, res) => {
 let getSensorDataLog = async (req, res) => {
     try {
         const locationId = req.params.warehouseId;
-        console.log(locationId);
         const hourlyData = [];
         const dailyData = [];
         const monthlyData = [];

@@ -3,6 +3,7 @@ import homeController from "../controllers/homeController"
 import userController from "../controllers/userController"
 import dataController from "../controllers/dataController"
 import warehouseController from "../controllers/warehouseController"
+import equipmentController from "../controllers/equipmentController"
 
 
 
@@ -19,11 +20,13 @@ let initWebRoutes = (app) => {
 	//warehouse api
 	router.get(baseApi + '/warehouses', warehouseController.getWarehouses)
 	
+	//equipment api
+	router.get(baseApi + '/equipments/:warehouseId', equipmentController.getEquipmentByWarehouseId)
 	
 	//user api
 	router.get(baseApi + '/users/:userID', userController.getUser)
 	
-	// rest api
+	//rest api
 	router.get('/crud', homeController.getCRUD)
 	router.get('/', homeController.getHomePage);
 
